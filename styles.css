@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 13px;
+    height: 100vh;
+    background-color:  hsl(0, 0%, 95%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    margin: 0 15%;
+}
+
+button {
+    font-family: 'Lexend Deca', sans-serif;
+    padding: 5%;
+    width: 60%;
+    border-radius: 20px;
+    background-color:  hsl(0, 0%, 95%);
+    outline: none;
+    border: none;
+} 
+
+button:hover {
+    border: 1px solid white;
+    background-color: inherit;
+}
+
+div{
+    padding: 5%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+div p {
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 25px;
+    height: 50%;
+}
+
+div h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    font-size: 30px;
+    color:  hsl(0, 0%, 95%);
+}
+
+.sedans {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 5px 0 0 5px;
+}
+
+.sedans button {
+    color: hsl(31, 77%, 52%);
+}
+
+.sedans button:hover {
+    color: white;
+}
+
+.suvs {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.suvs button:hover {
+    color: white;
+}
+
+.suvs button {
+    color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 5px 5px 0;
+}
+
+.luxury button:hover {
+    color: white;
+}
+
+.luxury button {
+    color: hsl(179, 100%, 13%);
+}
+
+
+@media only screen and (max-width: 425px) {
+    body{
+        font-size: 13px;
+        background-color:  hsl(0, 0%, 95%);
+        display: flex;
+        height: auto;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        margin: 10% 5%;
+        height: auto;
+    }
+    
+    button {
+        font-family: 'Lexend Deca', sans-serif;
+        padding: 5%;
+        width: 60%;
+        border-radius: 20px;
+        background-color:  hsl(0, 0%, 95%);
+        outline: none;
+        border: none;
+    }
+    
+    div{
+        padding: 5% 20%;
+        height: 50vh;
+
+    }
+    
+    .sedans {
+        border-radius: 5px 5px 0 0;
+    }
+    
+    .luxury {
+        border-radius: 0 0 5px 5px ;
+    }
+   
+}
+    
+   
+
